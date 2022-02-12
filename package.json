@@ -1,0 +1,15 @@
+{
+  "name": "telamon",
+  "version": "1.0.0",
+  "description": "Module for interacting with Atlas cluster",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Misczak",
+  "license": "ISC",
+  "dependencies": {
+    "postman-request": "^2.88.1-postman.31",
+    "yargs": "^17.3.1"
+  }
+}
