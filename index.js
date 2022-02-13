@@ -1,5 +1,6 @@
 const yargs = require('yargs')
 const utils = require('./utils.js')
+require('dotenv').config()
 
 yargs.version('1.1.0')
 
@@ -57,13 +58,13 @@ yargs.command({
 yargs.command({
     command: 'list-clusters',
     describe: 'List all clusters in a specified project',
-    builder: {
-        project: {
-            describe: 'Atlas Project ID',
-            demandOption: true,
-            type: 'string'
-        }
-    },
+    // builder: {
+    //     project: {
+    //         describe: 'Atlas Project ID',
+    //         demandOption: true,
+    //         type: 'string'
+    //     }
+    // },
     handler(argv) {
         utils.listClusters(argv.project)
     }
